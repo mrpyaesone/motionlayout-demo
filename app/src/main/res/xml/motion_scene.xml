@@ -37,7 +37,13 @@
                     app:target="@id/actor"
                     app:framePosition="70"
                     app:keyPositionType="deltaRelative"
-                    app:percentX="0.1"/>
+                    app:percentX="0.3"/>
+            <KeyCycle
+                    app:target="@id/actor"
+                    app:framePosition="30"
+                    android:rotation="50"
+                    app:waveShape="reverseSawtooth"
+                    app:wavePeriod="7"/>
         </KeyFrameSet>
     </Transition>
 

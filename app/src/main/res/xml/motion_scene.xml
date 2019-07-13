@@ -21,7 +21,7 @@
             android:id="@+id/my_transition"
             app:constraintSetStart="@id/starting_set"
             app:constraintSetEnd="@id/ending_set"
-            app:duration="1000">
+            app:duration="2000">
         <KeyFrameSet android:id="@+id/my_keyframe">
             <KeyPosition
                     app:target="@id/actor"
@@ -35,7 +35,7 @@
                     app:percentX="1"/>
             <KeyPosition
                     app:target="@id/actor"
-                    app:framePosition="70"
+                    app:framePosition="80"
                     app:keyPositionType="deltaRelative"
                     app:percentX="0.3"/>
             <KeyCycle
@@ -45,6 +45,16 @@
                     app:waveShape="reverseSawtooth"
                     app:wavePeriod="7"/>
         </KeyFrameSet>
+
+        <OnClick
+                app:target="@id/actor"
+                app:clickAction="transitionToEnd"/>
+
+        <OnSwipe
+                app:touchAnchorId="@id/actor"
+                app:dragDirection="dragUp"
+                app:touchAnchorSide="top"/>
+
     </Transition>
 
 </MotionScene>

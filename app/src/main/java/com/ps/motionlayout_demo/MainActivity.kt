@@ -8,6 +8,9 @@ import androidx.constraintlayout.motion.widget.MotionLayout
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.math.ceil
 
+/**
+ * Ref : https://code.tutsplus.com/tutorials/creating-animations-with-motionlayout-for-android--cms-31497
+ */
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
